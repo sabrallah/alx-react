@@ -1,8 +1,0 @@
-:root {
-  --hold: rgb(54, 115, 126);
-}
-
-div .Notifications {
-  padding: 5px;
-  border: 0.5rem solid var(--hold);
-}
