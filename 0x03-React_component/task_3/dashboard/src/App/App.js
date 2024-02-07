@@ -10,6 +10,11 @@ import "./App.css";
 import PropTypes from "prop-types";
 import { getLatestNotification } from "../utils/utils";
 
+/**
+ * Represents the main application component.
+ * @class
+ * @extends React.Component
+ */
 class App extends React.Component {
   constructor(props) {
     super(props);
