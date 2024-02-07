@@ -103,6 +103,19 @@ describe("Notification tests", () => {
   });
 
   it("re-renders if listNotifications if listNotifications is changed", () => {
+    /**
+     * Array of notifications.
+     * @typedef {Object} Notification
+     * @property {number} id - The unique identifier of the notification.
+     * @property {string} type - The type of the notification.
+     * @property {string} value - The value of the notification.
+     * @property {string} [html] - The HTML content of the notification.
+     */
+
+    /**
+     * List of notifications.
+     * @type {Notification[]}
+     */
     const newListNotifications = [
       { id: 1, type: "default", value: "New course available" },
       { id: 2, type: "urgent", value: "New resume available" },
