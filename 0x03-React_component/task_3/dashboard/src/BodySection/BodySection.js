@@ -1,6 +1,9 @@
 import PropTypes from "prop-types";
 import React, { Component } from "react";
 
+/**
+ * Represents a section of the body in a dashboard.
+ */
 class BodySection extends Component {
   render() {
     return (
