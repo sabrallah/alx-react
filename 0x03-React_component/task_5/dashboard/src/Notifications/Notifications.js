@@ -5,6 +5,11 @@ import NotificationItem from "./NotificationItem";
 import PropTypes from "prop-types";
 import NotificationItemShape from "./NotificationItemShape";
 
+/**
+ * Represents a component for displaying notifications.
+ * @class
+ * @extends Component
+ */
 class Notifications extends Component {
   constructor(props) {
     super(props);
