@@ -9,7 +9,9 @@ import Footer from "../Footer/Footer";
 import Notifications from "../Notifications/Notifications";
 import CourseList from "../CourseList/CourseList";
 import { shallow, mount } from "enzyme";
+import { KeyboardEvent } from "react";
 
+// Add the missing import statement for KeyboardEvent
 describe("App tests", () => {
   it("renders without crashing", () => {
     const component = shallow(<App />);
