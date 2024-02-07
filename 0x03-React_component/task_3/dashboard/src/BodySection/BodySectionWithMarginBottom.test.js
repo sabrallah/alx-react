@@ -5,6 +5,10 @@ import BodySection from "./BodySection";
 
 describe("BodySectionWithMarginBottom tests", () => {
   it("should apply margin bottom to child component", () => {
+    /**
+     * Represents a shallow rendered component with a margin bottom.
+     * @type {ShallowWrapper}
+     */
     const wrapper = shallow(<BodySectionWithMarginBottom title="test title" />);
 
     expect(wrapper.find(BodySection)).toHaveLength(1);

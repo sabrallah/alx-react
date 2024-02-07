@@ -4,6 +4,10 @@ import { shallow } from "enzyme";
 
 describe("BodySection tests", () => {
   it("should render correctly", () => {
+    /**
+     * Represents the shallow rendered wrapper for the BodySection component.
+     * @type {ShallowWrapper}
+     */
     const wrapper = shallow(
       <BodySection title="test title">
         <p>test children node</p>
