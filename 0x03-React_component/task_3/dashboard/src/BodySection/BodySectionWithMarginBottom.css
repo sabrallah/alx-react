@@ -1,3 +1,8 @@
+/**
+ * FILEPATH: /workspaces/alx-react/0x03-React_component/task_3/dashboard/src/BodySection/BodySectionWithMarginBottom.css
+ * 
+ * CSS class for a body section with a margin bottom of 40px.
+ */
 .bodySectionWithMargin {
   margin-bottom: 40px;
 }
