@@ -1,5 +1,12 @@
 import React, { Component } from "react";
 
+/**
+ * A higher-order component that adds logging functionality to a wrapped component.
+ *
+ * @param {Object} props - The props object.
+ * @param {React.Component} props.WrappedComponent - The component to be wrapped.
+ * @returns {React.Component} - The wrapped component with logging functionality.
+ */
 const WithLogging = ({ WrappedComponent }) => {
   const getDisplayName = (WrappedComponent) => WrappedComponent.displayName || WrappedComponent.name || "Component";
 

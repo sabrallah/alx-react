@@ -17,6 +17,10 @@ describe("WithLogging tests", () => {
   });
 
   it("should log out the right message on mount and on unmount", () => {
+    /**
+     * Spy on the console.log method and mock its implementation.
+     * @type {jest.SpyInstance}
+     */
     const spy = jest.spyOn(console, "log").mockImplementation();
     const NewComponent = WithLogging(TestComponent);
     const wrapper = shallow(<NewComponent />);
