@@ -1,4 +1,3 @@
-global.alert = jest.fn();
 import React from "react";
 import logo from "../assets/holberton-logo.jpg";
 import { StyleSheet, css } from "aphrodite";
