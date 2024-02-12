@@ -36,7 +36,6 @@ class App extends React.Component {
       this.props.logOut();
     }
   }
-
   componentDidMount() {
     document.addEventListener("keydown", this.handleKeyPress);
   }
@@ -47,28 +46,30 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className={css(styles.App)}>
-        <div className="heading-section">
-          <Notifications listNotifications={this.listNotifications} />
-          <Header />
+      <React.Fragment>
+        <div className={css(styles.App)}>
+          <div className="heading-section">
+            <Notifications listNotifications={this.listNotifications} />
+            <Header />
+          </div>
+          {this.props.isLoggedIn ? (
+            <BodySectionWithMarginBottom title="Course list">
+              <CourseList listCourses={this.listCourses} />
+            </BodySectionWithMarginBottom>
+          ) : (
+            <BodySectionWithMarginBottom title="Log in to continue">
+              <Login />
+            </BodySectionWithMarginBottom>
+          )}
+          <BodySection title="News from the school">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis at tempora odio, necessitatibus repudiandae reiciendis cum nemo sed asperiores ut molestiae eaque aliquam illo ipsa
+              iste vero dolor voluptates.
+            </p>
+          </BodySection>
+          <Footer />
         </div>
-        {this.props.isLoggedIn ? (
-          <BodySectionWithMarginBottom title="Course list">
-            <CourseList listCourses={this.listCourses} />
-          </BodySectionWithMarginBottom>
-        ) : (
-          <BodySectionWithMarginBottom title="Log in to continue">
-            <Login />
-          </BodySectionWithMarginBottom>
-        )}
-        <BodySection title="News from the school">
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis at tempora odio, necessitatibus repudiandae reiciendis cum nemo sed asperiores ut molestiae eaque aliquam illo ipsa
-            iste vero dolor voluptates.
-          </p>
-        </BodySection>
-        <Footer />
-      </div>
+      </React.Fragment>
     );
   }
 }
@@ -95,4 +96,3 @@ App.propTypes = {
 };
 
 export default App;
-
