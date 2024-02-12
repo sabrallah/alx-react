@@ -32,7 +32,7 @@ class App extends React.Component {
   handleKeyPress(e) {
     if (e.ctrlKey && e.key === "h") {
       e.preventDefault();
-      window.confirm("Logging you out");
+      alert("Logging you out");
       this.props.logOut();
     }
   }
