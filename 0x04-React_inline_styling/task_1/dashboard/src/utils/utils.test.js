@@ -3,7 +3,7 @@ import Adapter from 'enzyme-adapter-react-16';
 import { getFullYear, getFooterCopy, getLatestNotification } from './utils';
 
 test('Checking Year', () => {
-    expect(getFullYear()).toEqual(2022)
+    expect(getFullYear()).toEqual(2024)
 })
 
 test('checking footerCopy when input true', () =>  {
