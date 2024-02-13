@@ -8,14 +8,10 @@ import Header from '../Header/Header'
 import Footer from '../Footer/Footer'
 import Notifications from '../Notifications/Notifications'
 import CourseList from '../CourseList/CourseList'
-import { shallow, mount } from 'enzyme'
 import { StyleSheetTestUtils } from 'aphrodite'
 import { describe, it, expect, beforeEach, afterEach } from '@jest/globals'
 import { KeyboardEvent } from 'keyboardevent-key-polyfill'
-import { describe, it, expect, beforeEach, afterEach } from '@jest/globals'
 import { shallow, mount } from 'enzyme'
-import { StyleSheetTestUtils } from 'aphrodite'
-import { KeyboardEvent } from 'keyboardevent-key-polyfill'
 
 beforeEach(() => {
   StyleSheetTestUtils.suppressStyleInjection()
