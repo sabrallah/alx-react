@@ -72,7 +72,7 @@ By the end of this project, participants are expected to understand and explain 
 
 ## Repository Information
 
-- GitHub repository: [alx-react](https://github.com/sabrallah/alx-react/tree/master/0x04-React_inline_styling)
+- GitHub repository: [alx-react](https://github.com/sabrallah/alx-react/tree/master)
 - Directory: 0x04-React_inline_styling
 
 ## Additional Notes
