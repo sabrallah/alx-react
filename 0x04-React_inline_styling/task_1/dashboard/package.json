@@ -37,7 +37,7 @@
     "test-watch": "jest --watch"
   },
   "jest": {
-    "testEnvironment": "jsdom",
+    "testEnvironment": "jest-environment-jsdom",
     "setupFilesAfterEnv": [
       "<rootDir>/config/setupTests.js"
     ],
