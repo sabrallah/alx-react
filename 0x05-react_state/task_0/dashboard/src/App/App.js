@@ -9,6 +9,7 @@ import Footer from '../Footer/Footer';
 import PropTypes from 'prop-types';
 import { getLatestNotification } from '../utils/utils';
 import { StyleSheet, css } from 'aphrodite';
+import { alert } from 'window';
 
 const listCourses = [
   { id: 1, name: 'ES6', credit: 60 },
@@ -57,7 +58,7 @@ class App extends Component {
   }
 
   render () {
-    const { isLoggedIn, logOut } = this.props;
+    const { isLoggedIn } = this.props;
     const { displayDrawer } = this.state;
 
     return (
@@ -65,8 +66,8 @@ class App extends Component {
         <Notifications
           listNotifications={listNotifications}
           displayDrawer={displayDrawer}
-          handleDisplayDrawer={this.handleDisplayDrawer}
-          handleHideDrawer={this.handleHideDrawer}
+          onDisplayDrawer={this.handleDisplayDrawer}
+          onHideDrawer={this.handleHideDrawer}
         />
         <div className={css(styles.container)}>
           <div className={css(styles.app)}>
