@@ -14,7 +14,7 @@ class Notifications extends Component {
   shouldComponentUpdate(nextProps) {
     return (
       nextProps.listNotifications.length >
-        this.props.listNotifications.length ||
+      this.props.listNotifications.length ||
       nextProps.displayDrawer !== this.props.displayDrawer
     );
   }
@@ -92,8 +92,8 @@ class Notifications extends Component {
 Notifications.defaultProps = {
   displayDrawer: false,
   listNotifications: [],
-  handleDisplayDrawer: () => {},
-  handleHideDrawer: () => {},
+  handleDisplayDrawer: () => { },
+  handleHideDrawer: () => { },
 };
 
 Notifications.propTypes = {
