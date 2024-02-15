@@ -1,1 +1,1 @@
-BodySection.js 
+import BodySection from './BodySection';
