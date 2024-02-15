@@ -39,7 +39,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "jest": {
-    "testEnvironment": "jsdom",
+    "testEnvironment": "jest-environment-jsdom",
     "setupFiles": [
       "<rootDir>/config/setupTests.js"
     ],
