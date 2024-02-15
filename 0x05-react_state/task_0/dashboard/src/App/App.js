@@ -25,7 +25,7 @@ const listNotifications = [
 document.body.style.margin = 0;
 
 class App extends Component {
-  constructor (props) {
+  constructor(props) {
     super(props);
     this.handleKeyCombination = this.handleKeyCombination.bind(this);
     this.handleDisplayDrawer = this.handleDisplayDrawer.bind(this);
@@ -33,30 +33,30 @@ class App extends Component {
     this.state = { displayDrawer: false };
   }
 
-  handleKeyCombination (e) {
+  handleKeyCombination(e) {
     if (e.key === 'h' && e.ctrlKey) {
       alert('Logging you out');
       this.props.logOut();
     }
   }
 
-  handleDisplayDrawer () {
+  handleDisplayDrawer() {
     this.setState({ displayDrawer: true });
   }
 
-  handleHideDrawer () {
+  handleHideDrawer() {
     this.setState({ displayDrawer: false });
   }
 
-  componentDidMount () {
+  componentDidMount() {
     document.addEventListener('keydown', this.handleKeyCombination);
   }
 
-  componentWillUnmount () {
+  componentWillUnmount() {
     document.removeEventListener('keydown', this.handleKeyCombination);
   }
 
-  render () {
+  render() {
     const { isLoggedIn } = this.props;
     const { displayDrawer } = this.state;
 
@@ -73,17 +73,15 @@ class App extends Component {
             <Header />
           </div>
           <div className={css(styles.appBody)}>
-            {!isLoggedIn
-              ? (
-                <BodySectionWithMarginBottom title='Log in to continue'>
-                  <Login />
-                </BodySectionWithMarginBottom>
-                )
-              : (
-                <BodySectionWithMarginBottom title='Course list'>
-                  <CourseList listCourses={listCourses} />
-                </BodySectionWithMarginBottom>
-                )}
+            {!isLoggedIn ? (
+              <BodySectionWithMarginBottom title='Log in to continue'>
+                <Login />
+              </BodySectionWithMarginBottom>
+            ) : (
+              <BodySectionWithMarginBottom title='Course list'>
+                <CourseList listCourses={listCourses} />
+              </BodySectionWithMarginBottom>
+            )}
           </div>
           <BodySection title='News from the School'>
             <p>
