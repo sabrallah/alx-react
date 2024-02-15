@@ -1,7 +1,8 @@
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import React from 'react';
 import App from './App';
 import { StyleSheetTestUtils } from 'aphrodite';
+import { describe, beforeAll, afterAll, it, expect, jest } from 'jest';
 
 describe('<App />', () => {
   beforeAll(() => {
