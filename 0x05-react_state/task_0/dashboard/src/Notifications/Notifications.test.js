@@ -3,7 +3,7 @@ import React from 'react';
 import Notifications from './Notifications';
 import { getLatestNotification } from '../utils/utils';
 import { StyleSheetTestUtils } from 'aphrodite';
-import jest, { describe, beforeAll, afterAll, it, expect, beforeEach } from 'jest';
+import { describe, beforeAll, afterAll, it, expect, jest, beforeEach } from '@jest/globals';
 
 describe('<Notifications />', () => {
   let listNotifications;

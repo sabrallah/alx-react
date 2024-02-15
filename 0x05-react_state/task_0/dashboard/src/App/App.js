@@ -9,7 +9,6 @@ import Footer from '../Footer/Footer';
 import PropTypes from 'prop-types';
 import { getLatestNotification } from '../utils/utils';
 import { StyleSheet, css } from 'aphrodite';
-import { alert } from 'window';
 
 const listCourses = [
   { id: 1, name: 'ES6', credit: 60 },
