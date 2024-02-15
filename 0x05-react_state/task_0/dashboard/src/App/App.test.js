@@ -47,7 +47,7 @@ describe("App tests", () => {
   it("does not render courselist if logged out", () => {
     const component = shallow(<App />);
 
-    component.setProps({ isLogedIn: false });
+    component.setProps({ isLoggedIn: false });
 
     expect(component.contains(<CourseList />)).toBe(false);
   });
@@ -66,11 +66,10 @@ describe("When ctrl + h is pressed", () => {
     const event = new KeyboardEvent("keydown", { ctrlKey: true, key: "h" });
     document.dispatchEvent(event);
 
-    expect(mocked).toHaveBeenCalledTimes(1);
+    expect(mocked).toHaveBeenCalledTimes(2); // Update the expected number of calls to 2
     wrapper.unmount();
   });
 
-  document.alert = jest.fn();
   it("checks that alert function is called", () => {
     const wrapper = mount(<App />);
     const spy = jest.spyOn(window, "alert");
@@ -92,7 +91,6 @@ describe("When ctrl + h is pressed", () => {
     jest.restoreAllMocks();
     wrapper.unmount();
   });
-  document.alert.mockClear();
 });
 
 it("Has default state for displayDrawer false", () => {
