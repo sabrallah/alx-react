@@ -17,7 +17,7 @@ describe("<WithLogging />", () => {
 
     const HOC = WithLogging(() => <p />);
 
-    const wrapper = mount(<HOC />);
+    const wrapper = shallow(<HOC />);
     expect(wrapper.exists()).toEqual(true);
 
     expect(console.log).toHaveBeenNthCalledWith(

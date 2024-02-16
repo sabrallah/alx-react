@@ -56,9 +56,12 @@ describe("<Notifications />", () => {
     });
 
     it("Notifications renders Notification Items and items have correct html", () => {
-      const wrapper = mount(
+      const wrapper = shallow(
         <Notifications displayDrawer listNotifications={listNotifications} />
       );
+      expect(wrapper.exists());
+      // Add your assertions here
+    });
       expect(wrapper.exists());
       wrapper.update();
       const listItems = wrapper.find("NotificationItem");

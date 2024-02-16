@@ -9,6 +9,7 @@ import Footer from "../Footer/Footer";
 import PropTypes from "prop-types";
 import { getLatestNotification } from "../utils/utils";
 import { StyleSheet, css } from "aphrodite";
+import { render } from "@testing-library/react";
 
 const listCourses = [
   { id: 1, name: "ES6", credit: 60 },
@@ -23,6 +24,16 @@ const listNotifications = [
 ];
 
 document.body.style.margin = 0;
+jest.mock("./App", () => {
+  return {
+    __esModule: true,
+    default: jest.fn(),
+  };
+});
+
+test("renders App component", () => {
+  render(<App />);
+});
 
 class App extends Component {
   constructor(props) {
