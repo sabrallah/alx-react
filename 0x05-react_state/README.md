@@ -1,4 +1,4 @@
-# Project: 0x05. React states | ALX Africa Intranet
+# Project: 0x05. React states | ALX Africa Intranets
 
 ## Overview
 This project, titled "0x05. React state," is designed to enhance React state management skills on the ALX Africa Intranet. The project covers various topics, including local state, controlled components, React context, context consumers, advanced state management, and an introduction to React Hooks.
