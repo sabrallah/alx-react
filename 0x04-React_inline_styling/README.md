@@ -82,4 +82,4 @@ By the end of this project, participants are expected to understand and explain 
 
 ## Copyright Information
 
-Copyright © 2024 ALX, All rights reserved.
+Copyright © 2024 THE GREATEST OF ALL TIMES, All rights reserved.
