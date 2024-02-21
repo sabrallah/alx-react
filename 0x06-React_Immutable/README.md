@@ -59,11 +59,11 @@ Each task has specific instructions and requirements. Refer to the detailed desc
 
 ### Resources
 
-* **Immutable Object concept:** [link to resources] (Provide a relevant and helpful resource)
-* **Immutable.js Documentation:** [link to official documentation] (https://immutable-js.github.io/immutable-js/)
-* **Immutable.js GitHub:** [link to the GitHub repository] (https://github.com/immutable-js/immutable-js)
+* **Immutable Object concept:** [https://en.wikipedia.org/wiki/Immutable_object] (Provide a relevant and helpful resource)
+* **Immutable.js Documentation:** [https://immutable-js.com/docs/v4.3.5/] (https://immutable-js.github.io/immutable-js/)
+* **Immutable.js GitHub:** [https://github.com/immutable-js/immutable-js] (https://github.com/immutable-js/immutable-js)
 
 ### Repository
 
-* **GitHub repository:** alx-react (Update with the correct repository name if different)
-* **Directory:** 0x06-React_Immutable (Update with the correct directory name if different)
+* **GitHub repository:** alx-react (https://github.com/sabrallah/alx-react)
+* **Directory:** 0x06-React_Immutable (https://github.com/sabrallah/alx-react/tree/master/0x06-React_Immutable)
