@@ -1,3 +1,8 @@
+/**
+ * This file contains two Immutable Maps: map and map2.
+ * map contains a mapping of numbers to names.
+ * map2 is created from map with mutations to update values at keys 2 and 4.
+ */
 import { Map } from 'immutable';
 
 export const map = Map({
