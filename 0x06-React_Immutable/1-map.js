@@ -1,3 +1,5 @@
+import { Map } from 'immutable';
+
 /**
  * Converts a regular object to an Immutable Map.
  * 
