@@ -1,13 +1,13 @@
-import { fromJS as convertToImmutable } from 'immutable';
+import { fromJS } from 'immutable';
 
 /**
- * Accesses an immutable object based on the provided array path
- * @param {Object} object - The immutable object to access
- * @param {Array} path - The array path to access the object
- * @returns {any} The value found at the specified path or undefined if not found
+ * Accesses nested properties in an Immutable object based on an array of keys
+ * @param {object} object - The Immutable object to access
+ * @param {Array} array - An array of keys representing the path to the desired property
+ * @returns {*} The value of the nested property or undefined if not found
  */
-export default function accessImmutableObject(object, path) {
-  const mappedObj = convertToImmutable(object);
+export default function accessImmutableObject(object, array) {
+  const mappedObj = fromJS(object);
 
-  return mappedObj.getIn(path, undefined);
+  return mappedObj.getIn(array, undefined);
 }
