@@ -1,5 +1,11 @@
 import { Seq } from 'immutable';
 
+/**
+ * Prints the best students from the given object.
+ *
+ * @param {object} object - The object containing student information
+ * @return {undefined} This function does not return a value
+ */
 export default function printBestStudents(object) {
   const seq = Seq(object);
 
@@ -8,6 +14,12 @@ export default function printBestStudents(object) {
     return student.score > 70;
   });
 
+  /**
+   * A function to capitalize the first letter of a string.
+   *
+   * @param {string} string - the input string
+   * @return {string} the input string with the first letter capitalized
+   */
   function capFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
   }
