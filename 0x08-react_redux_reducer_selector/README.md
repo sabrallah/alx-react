@@ -68,7 +68,7 @@ Tasks focus on shaping a robust understanding and functional competence:
 ## Repository Links
 
 - **Main Repository**: [alx-react](https://github.com/sabrallah/alx-react)
-- **Project Directory**: [](https://github.com/alx-community/alx-react)
+- **Project Directory**: [0x08-react_redux_reducer_selector](https://github.com/sabrallah/alx-react/tree/master/0x08-react_redux_reducer_selector)
 
 ---
 © 2024 ALX. All rights reserved.
